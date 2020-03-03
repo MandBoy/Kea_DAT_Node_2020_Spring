@@ -58,7 +58,6 @@ app.get("/search", (req, res) => {
 });
 
 
-
 app.get("/google", (req, res) => {
     request('http://www.google.com', (error, response, body) => {
         console.error('error:', error); // Print the error if one occurred

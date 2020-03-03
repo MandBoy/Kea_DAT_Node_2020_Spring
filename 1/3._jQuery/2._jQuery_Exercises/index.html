@@ -1,73 +1,71 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Learning jQuery</title>
-	<style type="text/css">
-		.used-boxed-clicked {
-			background: linear-gradient(45deg, red, blue);
-			color: white;
-		}
-		li {
-    		list-style-position: inside;
-		}
-		ul {
-			list-style-position: inside;
-		}
-		body{
-			list-style-position: middle;
-		}
-	</style>
+    <title>Learning jQuery</title>
+    <style type="text/css">
+        .used-boxed-clicked {
+            background: linear-gradient(45deg, red, blue);
+            color: white;
+        }
+        li {
+            list-style-position: inside;
+        }
+        ul {
+            list-style-position: inside;
+        }
+    </style>
 </head>
 <body>
-	<div id="title">
-		<h2>Old Title</h2>
-	</div>
 
-	<h2 class="placeholder"></h2>
+    <div id="title">
+        <h2>Old title</h2>
+    </div>
 
-	<div class="subtitle-box">
-		<h3>Subtitle</h3>
-		<h4 class="temp">temp subtitle</h4>
-	</div>
+    <h2 class="placeholder"></h2>
 
-	<div class="first-list reason">List of reasons</div>
 
-	<ol id="first-list">
-		<li class="reason">Reason 1</li>
-		<li>Reason 2</li>
-		<li>Reason 3</li>
-	</ol>
+    <div class="subtitle-box">
+        <h3>Subtitle</h3>
+        <h4 class="temp">temp subtitle</h4>
+    </div>
 
-	<ul id="list" class="second-list">
+    <div class="first-list reason">List of reasons</div>
+
+    <ol id="first-list">
+        <li class="reason">Reason 1</li>
+        <li>Reason 2</li>
+        <li>Reason 3</li>
+    </ol>
+
+    <ul id="list" class="second-list">
       <h4>Here are additional reasons</h4>
       <span>This label gives a description</span>
       <li>An unordered list.</li>
       <li>Each point is automatically rendered with a dot in front of it.</li>
       <li>If you are reading this and know what the prefacing dot is called then randomly shout it out loud.</li>
-	</ul>
+    </ul>
 
-	<div class="unused-box">
-		<label>Temporary text label</label>
-	</div>
+    <div class="unused-box">
+        <label>Temporary text label</label>
+    </div>
 
-	<div class="button-group">
-		<p>Action center</p>
-		<button id="submit-button">
-			Click
-		</button>
-	</div>
-
+    <div class="button-group">
+        <p>Action center</p>
+        <button id="submit-button">
+            Click
+        </button>
+    </div>
 <!-- Assignment
 Hints are Base64 encoded. 
 
 Using jQuery only and without modifying the html, do the following: 
 
 Styling
-1. Change the body tag so that everything on the page is centered. ? 
-2. Change the text of "Old title" to "New title". ?
-3. Change the background color of the subtitle box to any color you like. ? 
-4. Make sure that the temp-subtitle isn't displayed without actually removing the element from DOM. Hint: ZGlzcGxheTogbm9uZQ== X
-5. Put a dashed border box of any pixel width around any div that has the class "reason" ?
+1. Change the body tag so that everything on the page is centered.
+2. Change the text of "Old title" to "New title".
+3. Change the background color of the subtitle box to any color you like.
+4. Make sure that the temp-subtitle isn't displayed without actually removing the element from DOM. Hint: ZGlzcGxheTogbm9uZQ==
+5. Put a dashed border box of any pixel width around any div that has the class "reason"
 
 Ordered list: Traversing the DOM
 6. Change the li's inside of the ordered list to be bold. Hint: RGlyZWN0IGNoaWxkIHNlbGVjdG9ycw== 
@@ -84,22 +82,25 @@ Unused-box: Adding and removing DOM nodes, Dynamic content, When the document is
 13. After finishing 12 add a paragraph before it that says "First Sentence".
 14. You can finally change the class name of unused-box to used-box.
 15. You know what. Let's additionally add a class name on the box called used-boxed-clicked. Every time the box is clicked it should toggle this class (add if not there or remove if there).
-
 Button, Event-handling
+
 16. On mousing over the submit-button add a title property that says "You're ready to click." Remove the text when the mouse isn't over the button anymore.
 17. On mouse click add a reason to the ordered list. The reason should start from Reason 4 and count up after every click.
 18. Console log the parent div when the button is clicked using a direct reference to the button inside of the event handler scope. Hint: JCh0aGlzKS5wYXJlbnQoKTs=
 Extra challenges (No jquery needed, just edit the HTML or the CSS in the head)
+
 19. Extra challenge: Style the website until you think it looks good.
 20. Add a tooltip to the button. You can apply it directly to the HTML and add CSS. 
 21. Figure out how to animate the border of the box from exercise 5 like a "neon sign". You are allowed to use code snippets found online but you are required to understand what each thing does to your element. 
 
 Extra challenge with FLEX 
 22. Use flex. Remove the "text-align: center;" value from the first assignment. Have the titles be centered with full page width. 
-	Place first-list to the left. It automatically takes a lot of width. Try to limit it. Hint VHJ5IHVzaW5nICdkaXNwbGF5OiBpbmxpbmUtYmxvY2s7Jw==
-	Place second-list to the right of the previously list. 
-	Place the button group at the lower right of the page. 
- -->	
+    Place first-list to the left. It automatically takes a lot of width. Try to limit it. Hint VHJ5IHVzaW5nICdkaXNwbGF5OiBpbmxpbmUtYmxvY2s7Jw==
+    Place second-list to the right of the previously list. 
+    Place the button group at the lower right of the page. 
+ -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./index.js"></script>
 
 </body>
 </html>
